@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+        
+    <title>BookApp</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">  
+                <div class="logo"><h1>BOOK APP</h1></div>
+                <div class="form">
+                    <form class="example" action="action_page.php">
+                        <div class="icon-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <input  type="text" placeholder="Search for name or author..    " name="search">
+                    </form>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="username">
+                    <img class="foto1" src="data:image/jpeg;base64,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" alt="">
+                    <p class="text1">Mary Jane</p>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+                <div class="logout">
+                    <ion-icon name="exit-outline"></ion-icon>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-left">
+            <ul> 
+                <li> <i class="fa-solid fa-house"></i> Home</li>
+                <li> <i class="fa-solid fa-list"></i> Categories</li>
+                <li> <i class="fa-solid fa-heart"></i> Wishlist</li>
+                <li> <i class="fa-regular fa-square-check"></i> Added</li>
+                <li> <i class="fa-solid fa-gears"></i> Settings</li>
+                <li><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</li>
+              
+            </ul>
+        </div>
+        <div class="main-right">
+            <div class="popular">
+                <h1 class="h1">POPULAR</h1>
+                <div class="all-books">
+                    <div class="book">
+                        <img class="book-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52Aa7drSXGtk_GoNeW6JvnmUKaW8VZPI6Pg&s" alt="">
+                        <p class="text3">Farhenheid 451</p>
+                        <p class="text4">Ray Bradbury</p>
+                        <p class="text5">$5.99</p>
+                    </div>
+                    <div class="book">
+                        <img class="book-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52Aa7drSXGtk_GoNeW6JvnmUKaW8VZPI6Pg&s" alt="">
+                        <p class="text3">Farhenheid 451</p>
+                        <p class="text4">Ray Bradbury</p>
+                        <p class="text5">$5.99</p>
+                    </div>
+                    <div class="book">
+                        <img class="book-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52Aa7drSXGtk_GoNeW6JvnmUKaW8VZPI6Pg&s" alt="">
+                        <p class="text3">Farhenheid 451</p>
+                        <p class="text4">Ray Bradbury</p>
+                        <p class="text5">$5.99</p>
+                    </div>
+                    <div class="book">
+                        <img class="book-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52Aa7drSXGtk_GoNeW6JvnmUKaW8VZPI6Pg&s" alt="">
+                        <p class="text3">Farhenheid 451</p>
+                        <p class="text4">Ray Bradbury</p>
+                        <p class="text5">$5.99</p>
+                    </div>
+                    <div class="book">
+                        <img class="book-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52Aa7drSXGtk_GoNeW6JvnmUKaW8VZPI6Pg&s" alt="">
+                        <p class="text3">Farhenheid 451</p>
+                        <p class="text4">Ray Bradbury</p>
+                        <p class="text5">$5.99</p>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="like">
+                <h1 class="h1">YOU MAY LIKE</h1>
+                <div class="all-books">
+                    <div class="book">
+                        <img class="book-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52Aa7drSXGtk_GoNeW6JvnmUKaW8VZPI6Pg&s" alt="">
+                        <p class="text3">Farhenheid 451</p>
+                        <p class="text4">Ray Bradbury</p>
+                        <p class="text5">$5.99</p>
+                    </div>
+                    <div class="book">
+                        <img class="book-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52Aa7drSXGtk_GoNeW6JvnmUKaW8VZPI6Pg&s" alt="">
+                        <p class="text3">Farhenheid 451</p>
+                        <p class="text4">Ray Bradbury</p>
+                        <p class="text5">$5.99</p>
+                    </div>
+                    <div class="book">
+                        <img class="book-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52Aa7drSXGtk_GoNeW6JvnmUKaW8VZPI6Pg&s" alt="">
+                        <p class="text3">Farhenheid 451</p>
+                        <p class="text4">Ray Bradbury</p>
+                        <p class="text5">$5.99</p>
+                    </div>
+                    <div class="book">
+                        <img class="book-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52Aa7drSXGtk_GoNeW6JvnmUKaW8VZPI6Pg&s" alt="">
+                        <p class="text3">Farhenheid 451</p>
+                        <p class="text4">Ray Bradbury</p>
+                        <p class="text5">$5.99</p>
+                    </div>
+                    <div class="book">
+                        <img class="book-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52Aa7drSXGtk_GoNeW6JvnmUKaW8VZPI6Pg&s" alt="">
+                        <p class="text3">Farhenheid 451</p>
+                        <p class="text4">Ray Bradbury</p>
+                        <p class="text5">$5.99</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer></footer>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
